@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultras</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<div class="nav1container">
+    <p>Let's talk! </p>
+    <p class="center">Free shipping on a purchase value of &#8377;1000.</p>
+<div class="group">
+  <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+    <g>
+      <path
+        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+      ></path>
+    </g>
+  </svg>
+  <input class="input" type="search" placeholder="Search for products" >
+</div>
+<div class="navicons">
+  <i class="fa-solid fa-user"></i>
+  <i class="fa-solid fa-cart-shopping"></i>
+  <i class="fa-solid fa-heart"></i>
+</div>
+</div>
+
+
+
+<!-- Main Nav container -->
+  <div class="nav2container">
+    <div class="image">
+      <img  src="./images/main-logo.png" alt="logo" >
+    </div>
+
+  <ul class="nav-menu">
+  <li>
+    <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home v2</a></li>
+    </ul>
+  </li>
+  <li><a href="#">About</a></li>
+  <li>
+    <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Wishlist</a></li>
+      <li><a href="#">Checkout</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="#">Coming Soon</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Styles</a></li>
+      <li><a href="#">Thank You</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="#">Blog With Sidebar</a></li>
+      <li><a href="#">Single Post</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</div>
+  <section class="hero">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 690px; background: url('images/banner1.jpg') center/cover no-repeat; background-size: cover;">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h1  class="display-5">Ultras Clothing</h1>
+              <p>New season arrivals — shop now</p>
+              <a class="btn btn-dark btn-lg" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 690px; background: url('images/banner2.jpg') center/cover no-repeat;">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-5">Streetwear Collection</h1>
+              <p>Comfortable, trendy, and affordable</p>
+              <a class="btn btn-dark btn-lg" href="#">Browse</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 690px; background: url('images/main-banner.jpg') center/cover no-repeat;">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-5">Limited Edition</h1>
+              <p>Grab it before it's gone</p>
+              <a class="btn btn-dark btn-lg" href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Featured Products (static grid) -->
+    <section style="margin-right: 6%;" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 style="font-size: 2rem; letter-spacing: 1px;" class="h4 mb-0 ">Featured Products</h2>
+          <a  href="#" class="small">View all products</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/product-item1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Full Sleeve Cover Shirt</h5>
+                <p class="card-text">&#8377;500</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/product-item2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Volunteer Half Blue</h5>
+                <p class="card-text">&#8377;600</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/product-item3.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Double Yellow Shirt</h5>
+                <p class="card-text">&#8377;700</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/product-item4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Long Belly Grey Pant</h5>
+                <p class="card-text">&#8377;750</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section class="collection-section py-5 bg-light">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Left Large Image -->
+      <div class="col-md-8">
+        <div class="collection-card large-card text-white" style="background-image: url('images/collection-item1.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <p class="small text-uppercase text-muted">Casual Collection</p>
+            <h2 class="fw-bold">Street<br>Wear.</h2>
+            <p class="text-muted mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+            <a href="#" class="shop-link">Shop Collection →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Two Smaller Cards -->
+      <div class="col-md-4 d-flex flex-column gap-4">
+        <div class="collection-card small-card text-white" style="background-image: url('images/collection-item2.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <p class="small text-uppercase text-muted">Basic Collection</p>
+            <h3 class="fw-bold">Basic<br>Shoes.</h3>
+            <a href="#" class="shop-link">Shop Collection →</a>
+          </div>
+        </div>
+
+        <div class="collection-card small-card text-white" style="background-image: url('images/collection-item3.jpg');">
+          <div class="overlay"></div>
+          <div class="content">
+            <p class="small text-uppercase text-muted">Best Selling Product</p>
+            <h3 class="fw-bold">Woolen<br>Hat.</h3>
+            <a href="#" class="shop-link">Shop Collection →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- discount container -->
+ <div class = "discountcontainer">
+  <h2> Get 25% off Discount Coupons</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum, omnis libero rem consectetur nisi mollitia animi eius ipsum doloremque corporis cupiditate eum voluptates cum itaque repellendus possimus eaque? Placeat!</p>
+  </div>
+
+  <div class="inputbox">
+      <input type="email" placeholder="Enter your email address here" aria-label="Email address"><button  type="button" >Subscribe Now</button>
+  </div>
+      <section style ="margin-right: 6%;" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 style="font-size: 2rem; letter-spacing: 1px;" class="h4 mb-0">Best Selling Products</h2>
+          <a  href="#" class="small">View all products</a>
+        </div>   
+         <div class="productcontainer">
+  <ul class="selling-products">
+    <li><a href="#">All</a></li>
+    <li><a href="#shoes " >shoes</a></li>
+    <li><a href="#tshirt">Tshirts</a></li>
+    <li><a href="#">Pants</a></li>
+    <li><a href="#hoodie">Hoodie</a></li>
+    <li><a href="#">Outer</a></li>
+    <li><a href="#jacket">Jackets</a></li>
+    <li><a href="#">Accesories</a></li> 
+ 
+</ul>
+    <section id= "tshirt" class="py-5">
+      <div  class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Half Sleeve T-Shirt</h5>
+                <p class="card-text">&#8377;400</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Stylish Grey T-shirt</h5>
+                <p class="card-text">&#8377;600</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products3.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Silk White Shirt</h5>
+                <p class="card-text">&#8377;700</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div id = "hoodie" class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Grunge Hoodie</h5>
+                <p class="card-text">&#8377;750</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section id = "jacket" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card product-card">
+             <img src="images/selling-products5.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Full Sleeve Jeans Jacket</h5>
+                <p class="card-text">&#8377;800</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products6.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Grey Check Coat</h5>
+                <p class="card-text">&#8377;650</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products7.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Long Sleeve Tshirt</h5>
+                <p class="card-text">&#8377;750</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products8.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Half Sleeve T-Shirt</h5>
+                <p class="card-text">&#8377;550</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+      <section id = shoes  class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products13.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Orange White Nike</h5>
+                <p class="card-text">&#8377;2000</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products14.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Running Shoe</h5>
+                <p class="card-text">&#8377;2100</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products15.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Tennis Shoes</h5>
+                <p class="card-text">&#8377;2200</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card product-card">
+              <img src="images/selling-products16.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Nike Brand Shoe</h5>
+                <p class="card-text">&#8377;2550</p>
+                <a href="#" class="btn btn-outline-dark btn-sm">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="testimonials" class="padding-large no-padding-bottom">
+  <div class="container">
+    <div class="reviews-content">
+      <div class="testimonial-slider">
+        <!-- Radio buttons for slide control -->
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+
+        <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="testimonial-detail">
+              <p>Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.</p>
+              <div class="author-detail">
+                <div class="name">By Maggie Rio</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="testimonial-detail">
+              <p>Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.</p>
+              <div class="author-detail">
+                <div class="name">By John Smith</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="navigation">
+          <label for="slide1" class="nav-btn"></label>
+          <label for="slide2" class="nav-btn"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container my-5">
+  <h2 class="fw-bold mb-4">Flash Sales</h2>
+
+  <div class="row g-4">
+    <!-- Product 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card h-100">
+        <div class="position-relative">
+          <span style=" background-color: aquamarine;"  class="discount-badge">10% Off</span>
+          <img src="./images/selling-products9.jpg" class="card-img-top" alt="Full Sleeve Cover Shirt">
+        </div>
+        <div class="card-body text-center">
+          <h6 class="card-title mb-2">Full Sleeve Cover Shirt</h6>
+          <div class="price">
+            <span style="text-decoration:line-through;" class="old-price"> &#8377;550</span>
+            <span class="new-price">&#8377;350</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card h-100">
+        <div class="position-relative">
+          <span style=" background-color: aquamarine;"  class="discount-badge">10% Off</span>
+          <img src="./images/selling-products10.jpg" class="card-img-top" alt="Long Sleeve T-Shirt">
+        </div>
+        <div class="card-body text-center">
+          <h6 class="card-title mb-2">Long Sleeve T-Shirt</h6>
+          <div class="price">
+            <span  style="text-decoration:line-through;"  class="old-price">&#8377;650</span>
+            <span class="new-price">&#8377;450</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card h-100">
+        <div class="position-relative">
+          <span style=" background-color: aquamarine;"  class="discount-badge">10% Off</span>
+          <img src="./images/selling-products11.jpg" class="card-img-top" alt="Grey Check Coat">
+        </div>
+        <div class="card-body text-center">
+          <h6 class="card-title mb-2">Grey Check Coat</h6>
+          <div class="price">
+            <span style="text-decoration:line-through;"  class="old-price">&#8377;750</span>
+            <span class="new-price">&#8377;550</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card h-100">
+        <div class="position-relative">
+          <span style=" background-color: aquamarine;" class="discount-badge">10% Off</span>
+          <img src="images/selling-products11.jpg" class="card-img-top" alt="Silk White Shirt">
+        </div>
+        <div class="card-body text-center">
+          <h6 class="card-title mb-2">Silk White Shirt</h6>
+          <div class="price">
+            <span style="text-decoration:line-through;"  class="old-price">&#8377;650</span>
+            <span class="new-price">&#8377;450</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<section class="hero-banner container my-5 p-4">
+  <div class="row align-items-center">
+    <!-- Left: Image -->
+    <div class="col-12 col-md-6">
+      <img src="./images/model.jpg" alt="" class="item-1" height="400px" width="500px">
+    </div>
+    <!-- Right: Text -->
+    <div class="col-12 col-md-6 text-md-start text-center mt-4 mt-md-0">
+      <p class="text-uppercase text-muted small mb-2">Denim Collection</p>
+      <h1 class="fw-bold display-5 mb-3">The Casual Selection.</h1>
+      <p class="text-muted mb-4">
+        Vel non viverra ligula odio ornare turpis mauris. Odio aliquam,
+        tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.
+      </p>
+      <a href="#" class="btn-link fw-semibold text-dark">
+        Shop Collection →
+      </a>
+    </div>
+  </div>
+</section>
+   <!-- quote of the day   -->
+    <!-- journal section -->
+
+   <section class="journal-section container py-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold mb-0">Our Journal</h2>
+    <a href="#" class="btn-link text-dark fw-semibold">Read All Articles →</a>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-4">
+      <div class="card border-0 h-100">
+        <img src="./images/post-img1.jpg" class="card-img-top rounded-3" alt="Kids Fashion">
+        <div class="card-body px-0">
+          <div class="d-flex align-items-start mb-2">
+            <div class="me-3 text-primary text-center">
+              <h4 class="mb-0 fw-bold">22</h4>
+              <small class="text-uppercase text-muted">Aug-2021</small>
+            </div>
+            <div>
+              <h5 class="card-title fw-bold mb-1">Top 10 Casual Look Ideas To Dress Up Your Kids</h5>
+              <small class="text-uppercase text-muted fw-semibold">Fashion</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card border-0 h-100">
+        <img src="./images/post-img2.jpg" class="card-img-top rounded-3" alt="Streetwear">
+        <div class="card-body px-0">
+          <div class="d-flex align-items-start mb-2">
+            <div class="me-3 text-primary text-center">
+              <h4 class="mb-0 fw-bold">25</h4>
+              <small class="text-uppercase text-muted">Aug-2021</small>
+            </div>
+            <div>
+              <h5 class="card-title fw-bold mb-1">Latest Trends Of Wearing Street Wears Supremely</h5>
+              <small class="text-uppercase text-muted fw-semibold">Trending</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card border-0 h-100">
+        <img src="./images/post-img3.jpg" class="card-img-top rounded-3" alt="Women Outfit">
+        <div class="card-body px-0">
+          <div class="d-flex align-items-start mb-2">
+            <div class="me-3 text-primary text-center">
+              <h4 class="mb-0 fw-bold">28</h4>
+              <small class="text-uppercase text-muted">Aug-2021</small>
+            </div>
+            <div>
+              <h5 class="card-title fw-bold mb-1">Types Of Comfortable Clothes Ideas For Women</h5>
+              <small class="text-uppercase text-muted fw-semibold">Inspiration</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands">
+  <div class="brand-container">
+    <div class="item1"><img src="images/brand1.png"></div>
+    <div class="item2"><img src="images/brand2.png"></div>
+    <div class="item3"><img src="images/brand3.png"></div>
+    <div class="item4"><img src="images/brand4.png"></div>
+    <div class="item5"><img src="images/brand5.png"></div>
+  </div>
+</section>
+    
+
+    <!-- Instagram grid -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="mb-4">Follow our instagram</h3>
+        <h5 class="page">Our Offial Instagram account <a href="#">@ultra </a> or <a href="#">#ultra</a> </h3>
+        <div class="row g-2">
+          <div class="col-6 col-md-2"><img src="images/insta-image1.jpg" class="img-fluid" alt=""></div>
+          <div class="col-6 col-md-2"><img src="images/insta-image2.jpg" class="img-fluid" alt=""></div>
+          <div class="col-6 col-md-2"><img src="images/insta-image3.jpg" class="img-fluid" alt=""></div>
+          <div class="col-6 col-md-2"><img src="images/insta-image4.jpg" class="img-fluid" alt=""></div>
+          <div class="col-6 col-md-2"><img src="images/insta-image5.jpg" class="img-fluid" alt=""></div>
+          <div class="col-6 col-md-2"><img src="images/insta-image6.jpg" class="img-fluid" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <h5>Ultras</h5>
+            <p><a href="#">About Us </a></p>
+            <p><a href="#">Conditions</a></p>
+            <p><a href="#">Our Journals</a></p>
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Affiliate Programme</a></p>
+            <p><a href="#">Ultra Press</a></p>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Customer Service</h5>
+             <p><a href="#">FAQ</a></p>
+             <p><a href="#">Contact</a></p>
+             <p><a href="#">Privacy & Policy</a></p>
+             <p><a href="#">Returns & Returns</a></p>
+             <p><a href="#">Cookie Guidelines</a></p>
+             <p><a href="#">Delivery Information</a></p>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <p>Do you have Any Questions or Suggestions?</p>
+            <p><a href="#">ourservices@ultras.com</a></p> 
+          </div>
+
+          <div class="col-md-3">
+            <h5>Forever 2018</h5>
+            <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>          
+            </div>
+            <div class="digital-icons">
+              <div class="digital1"></div>
+              <div class="digital2"></div>
+              <div class="digital3"></div>
+              <div class="digital4"></div>
+
+            </div>
+        </div>
+
+        <hr class="border-secondary my-4">
+    
+        <div class="d-flex justify-content-between small text-muted pb-4"> 
+   
+          <div><h1>u</h1> Payment options:</div><img  style="margin-left:1060px; " src="images/visa-icon.jpg" alt="visa" height="40"> <img src="images/mastercard.png" alt="mc" height="40"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle (required for carousel, collapse, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
