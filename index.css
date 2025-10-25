@@ -32,7 +32,7 @@ body{
   font-family: "Inter", sans-serif;
   color: #8d8d8d;
   margin-left: 2%;
-  font-size: 1.07rem;
+  font-size: 1.3rem;
 }
 
 .nav1container > .center {
@@ -107,6 +107,24 @@ input:hover {
   margin-right: 2.5%;
   margin-left: 1.4%;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 3px;
+}
+
+/* Hidden checkbox for toggle */
+#menu-toggle {
+  display: none;
+}
 
 /* Logo styling */
 .image img {
@@ -146,6 +164,7 @@ input:hover {
 .nav-menu a:hover {
   color: #0ab3e3;
 }
+
 
 /* ===== ARROWS ===== */
 .nav-menu i {
@@ -544,10 +563,26 @@ section .img-fluid:hover {
   margin-top: 3%;
   background-color: #ccc;
   height: 200px;
+}
+.title{
+  margin-top: 6%;
 } 
-/* --------------------------
+.quotecontainer>p{
+max-width: 50%;
+font-size: 1.4rem;
+margin-left: 30%;
+margin-top: 3%;
+color: grey;
+} 
+.name{
+  margin-left: 30%;
+
+}
+
+
+/*
    JOURNAL SECTION STYLING
------------------------------ */
+ */
 .journal-section {
   background-color: #fafafa;
   border-radius: 12px;
@@ -610,6 +645,260 @@ section .img-fluid:hover {
 .journal-section .text-primary {
   color: #3c17d0 !important;
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #fff;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+  }
+
+  /* When checked, show the menu */
+  #menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+    background-color: #000;
+  
+  }
+
+  .nav-menu li {
+    padding: 10px 0;  
+  }
+
+  .dropdown {
+    position: static;
+    background: none;
+    box-shadow: none;
+  }
+}
+hr{
+  margin-top: 10%;
+}
+.digital-icons{
+  margin-left: 91%;
+  font-size: 2rem;
+}
+/* 🔹 Desktop (default) - no changes needed */
+
+/* 🔹 Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nav1container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav1container > p {
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+
+  .group {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 160px;
+  }
+
+  .navicons {
+    gap: 10px;
+  }
+}
+
+/* 🔹 Phones (below 768px) */
+@media (max-width: 768px) {
+  /* Hide “Let’s Talk” and “Freshening” text */
+  .nav1container > p,
+  .nav1container > .center {
+    display: none;
+  }
+
+  /* Keep only search bar and icons visible */
+  .nav1container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .group {
+    margin: 0 auto;
+    max-width: 70%;
+  }
+
+  .navicons {
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  /* Adjust navbar spacing */
+  .nav2container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .image img {
+    height: 45px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* 🔹 Small Phones (below 480px) */
+@media (max-width: 480px) {
+  .group {
+    max-width: 85%;
+  }
+
+  .input {
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    left: 0.8rem;
+    width: 0.9rem;
+  }
+
+  .navicons {
+    font-size: 1.2rem;
+  }
+}
+/* 🔹 Tablet View (768px–1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Carousel adjustments */
+  .carousel-item {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  /* Product grid 2 per row */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+  }
+}
+
+/* 🔹 Mobile View (Below 768px) */
+@media (max-width: 768px) {
+  /* Carousel images — make them shorter & fit screen width */
+  .carousel-item {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel-caption {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .carousel-caption .btn {
+    padding: 6px 20px;
+    font-size: 0.8rem;
+  }
+
+  /* Best Selling Products */
+  .selling-products {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  .selling-products > li > a {
+    font-size: 1rem;
+  }
+
+  /* Product container */
+  .productcontainer {
+    padding: 20px;
+  }
+
+  /* Product cards stacked 1 per row */
+  .product-grid,
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+/* 🔹 Small Phones (Below 480px) */
+@media (max-width: 480px) {
+  .carousel-item {
+    height: 200px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+
+  .selling-products > li > a {
+    font-size: 0.9rem;
+  }
+
+  .product-card {
+    max-width: 320px;
+  }
+}
+
+
+
 
 
 

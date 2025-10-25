@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultras</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ <link rel="stylesheet" href="index.css">
+ 
 
 </head>
 <body>
@@ -42,43 +46,54 @@
       <img  src="./images/main-logo.png" alt="logo" >
     </div>
 
+  <!-- Navigation Menu -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
   <ul class="nav-menu">
-  <li>
-    <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Home v2</a></li>
-    </ul>
-  </li>
-  <li><a href="#">About</a></li>
-  <li>
-    <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">Cart</a></li>
-      <li><a href="#">Wishlist</a></li>
-      <li><a href="#">Checkout</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="#">Coming Soon</a></li>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Styles</a></li>
-      <li><a href="#">Thank You</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="#">Blog With Sidebar</a></li>
-      <li><a href="#">Single Post</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Contact</a></li>
-</ul>
+    <li>
+      <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+      <ul class="dropdown">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home v2</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li>
+      <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+      <ul class="dropdown">
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Checkout</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+      <ul class="dropdown">
+        <li><a href="#">Coming Soon</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Styles</a></li>
+        <li><a href="#">Thank You</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+      <ul class="dropdown">
+        <li><a href="#">Blog With Sidebar</a></li>
+        <li><a href="#">Single Post</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
 
 </div>
   <section class="hero">
@@ -121,7 +136,7 @@
       <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <h2 style="font-size: 2rem; letter-spacing: 1px;" class="h4 mb-0 ">Featured Products</h2>
-          <a  href="#" class="small">View all products</a>
+          <a  href="#" class="small  text-decoration-none text-black" >View all products→</a>
         </div>
 
         <div class="row g-4">
@@ -224,7 +239,7 @@
       <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <h2 style="font-size: 2rem; letter-spacing: 1px;" class="h4 mb-0">Best Selling Products</h2>
-          <a  href="#" class="small">View all products</a>
+          <a  href="#" class="small   text-decoration-none text-black">View all products →</a>
         </div>   
          <div class="productcontainer">
   <ul class="selling-products">
@@ -527,6 +542,12 @@
   </div>
 </section>
    <!-- quote of the day   -->
+    <div class="quotecontainer">
+     <div class ="title  d-flex justify-content-center "><h1>Quote Of The Day </h1></div>
+     <p >"It's true, I don't like the whole cutoff-shorts-and-T-shirt look, but I think you can look fantastic in casual clothes."</p>
+     <p style="margin-left: 50%;">- Dr. Seuss</p>
+
+    </div><hr>
     <!-- journal section -->
 
    <section class="journal-section container py-5">
@@ -617,7 +638,26 @@
           <div class="col-6 col-md-2"><img src="images/insta-image6.jpg" class="img-fluid" alt=""></div>
         </div>
       </div>
-    </section>
+    </section><hr>
+    <!-- offers container -->
+    <div class="container">
+      <div class="offers d-flex">
+        <div class="icon1 fs-4  "><i class="fa fa-truck " aria-hidden="true"> </i></div>
+        <p  class =" ms-3 mt-1 text-dark "><b> Free shipping</b></p>
+        <p  class =" ms-1 mt-1">Over &#8377;1000</p>
+        <div class="icon1 fs-4 ms-5  "><i class="bi bi-arrow-return-left " aria-hidden="true"> </i></div>
+        <p  class =" ms-3 text-dark"><b> Money Back</b></p>
+        <p  class =" ms-1 mt-1">Return within 7 Days</p>
+        <div class="icon1 fs-3 ms-5 "><i class="fa-solid fa-tag " aria-hidden="true"> </i></div>
+        <p  class =" ms-3 mt-1 text-dark"><b>Buy 4 Get 5</b></p>
+        <p  class =" ms-1 mt-1">50%off </p>
+        <div class="icon1 fs-4 ms-5  "><i class="bi bi-question-circle" aria-hidden="true"> </i></div>
+        <p  class =" ms-3 mt-1"><b> Any Questions</b></p>
+        <p  class =" ms-1 mt-1">Experts are there</p>
+      
+      </div>
+      
+    </div>
 
 
     <!-- Footer -->
@@ -654,12 +694,10 @@
             <h5>Forever 2018</h5>
             <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>          
             </div>
-            <div class="digital-icons">
-              <div class="digital1"></div>
-              <div class="digital2"></div>
-              <div class="digital3"></div>
-              <div class="digital4"></div>
-
+            <div class="digital-icons d-flex">
+              <div class="digital1 ms-1"> <i class="bi bi-facebook"></i></div>
+              <div class="digital2 ms-3"> <i class="bi bi-twitter"></i></div>
+              <div class="digital3 ms-3"> <i class="bi bi-youtube"></i></div>
             </div>
         </div>
 
@@ -667,7 +705,7 @@
     
         <div class="d-flex justify-content-between small text-muted pb-4"> 
    
-          <div><h1>u</h1> Payment options:</div><img  style="margin-left:1060px; " src="images/visa-icon.jpg" alt="visa" height="40"> <img src="images/mastercard.png" alt="mc" height="40"></div>
+          <div><h1></h1> Payment options:</div><img  style="margin-left:1060px; " src="images/visa-icon.jpg" alt="visa" height="40"> <img src="images/mastercard.png" alt="mc" height="40"></div>
         </div>
       </div>
     </footer>
