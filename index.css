@@ -148,7 +148,7 @@ input:hover {
   position: relative;
 }
 
-/* ===== LINKS ===== */
+/* LINKS */
 .nav-menu a {
   text-decoration: none;
   color: #000;
@@ -166,7 +166,7 @@ input:hover {
 }
 
 
-/* ===== ARROWS ===== */
+/*ARROWS  */
 .nav-menu i {
   font-size: 12px;
   transition: transform 0.3s ease;
@@ -225,7 +225,7 @@ input:hover {
 }
 
 
-/* ===== ANIMATION ===== */
+/*  ANIMATION  */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -435,7 +435,7 @@ button:hover{
   background-color: rgb(249, 249, 252);
 
 }
-/* 🔹 Common Zoom Effect for Product Cards */
+/* Common Zoom Effect for Product Cards */
 .product-card img {
   transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
@@ -449,7 +449,7 @@ button:hover{
   transition: box-shadow 0.3s ease;
 }
 
-/* 🔹 Zoom effect for Instagram images */
+/* Zoom effect for Instagram images */
 section .img-fluid {
   transition: transform 0.4s ease;
   border-radius: 6px;
@@ -459,9 +459,9 @@ section .img-fluid:hover {
   transform: scale(1.08);
   cursor: pointer;
 }
-/* ======================== */
+
 /* Testimonial Section Safe */
-/* ======================== */
+
 #testimonials {
   padding: 60px 0;
   background: #f9f9f9;
@@ -645,6 +645,19 @@ color: grey;
 .journal-section .text-primary {
   color: #3c17d0 !important;
 }
+.items>p>a{
+  text-decoration: none;
+  color: #e5d528;
+}
+hr{
+  margin-top: 10%;
+}
+.digital-icons{
+  margin-left: 87%;
+  font-size: 2rem;
+}
+
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -666,7 +679,7 @@ color: grey;
   /* When checked, show the menu */
   #menu-toggle:checked + .hamburger + .nav-menu {
     display: flex;
-    background-color: #000;
+    color: white;
   
   }
 
@@ -679,17 +692,25 @@ color: grey;
     background: none;
     box-shadow: none;
   }
+  
 }
-hr{
-  margin-top: 10%;
+/* Strictly small phones only */
+@media (max-width: 480px) {
+  html, body { overflow-x: hidden; }
 }
-.digital-icons{
-  margin-left: 91%;
-  font-size: 2rem;
-}
-/* 🔹 Desktop (default) - no changes needed */
 
-/* 🔹 Tablets (768px to 1024px) */
+/* All mobile phones */
+@media (max-width: 576px) {
+  html, body { overflow-x: hidden; }
+}
+
+/* Mobiles + tablets (safe for most cases) */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+}
+
+
+/*  Tablets (768px to 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
   .nav1container {
     flex-wrap: wrap;
@@ -712,9 +733,8 @@ hr{
   }
 }
 
-/* 🔹 Phones (below 768px) */
+/*  Phones (below 768px) */
 @media (max-width: 768px) {
-  /* Hide “Let’s Talk” and “Freshening” text */
   .nav1container > p,
   .nav1container > .center {
     display: none;
@@ -754,9 +774,13 @@ hr{
   .hamburger {
     display: flex;
   }
+    footer{
+    text-align: center;
+   
+  }
 }
 
-/* 🔹 Small Phones (below 480px) */
+/* Small Phones (below 480px) */
 @media (max-width: 480px) {
   .group {
     max-width: 85%;
@@ -775,8 +799,13 @@ hr{
   .navicons {
     font-size: 1.2rem;
   }
+  footer{
+    text-align: center;
+   
+  }
+  
 }
-/* 🔹 Tablet View (768px–1024px) */
+/* Tablet View (768px–1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
   /* Carousel adjustments */
   .carousel-item {
@@ -802,7 +831,7 @@ hr{
   }
 }
 
-/* 🔹 Mobile View (Below 768px) */
+/* Mobile View (Below 768px) */
 @media (max-width: 768px) {
   /* Carousel images — make them shorter & fit screen width */
   .carousel-item {
@@ -872,30 +901,286 @@ hr{
     height: auto;
     border-radius: 10px;
   }
+   
 }
 
-/* 🔹 Small Phones (Below 480px) */
+
+/* Small Phones (Below 480px) */
+
 @media (max-width: 480px) {
+
+ 
   .carousel-item {
-    height: 200px;
+    height: auto;              
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-caption {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10px;
   }
 
   .carousel-caption h1 {
     font-size: 1.2rem;
+    line-height: 1.3;
   }
 
   .carousel-caption p {
+    font-size: 0.85rem;
+  }
+
+  .carousel-caption .btn {
+    padding: 6px 18px;
     font-size: 0.8rem;
   }
 
+  /*Subscribe  */
+  .discountcontainer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .discountcontainer > h2,
+  .discountcontainer > p {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .inputbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .inputbox > input {
+    width: 90%;
+    height: 45px;
+    margin: 0;
+  }
+
+  .inputbox > button {
+    width: 90%;
+    height: 45px;
+  }
+
+  /* Selling Products */
+  .selling-products {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
   .selling-products > li > a {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  /*  Product Cards Responsive */
+  .productcontainer {
+    padding: 10px;
   }
 
   .product-card {
+    width: 100%;
     max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 }
+.col-12>img{
+  width: 100%;
+  
+}
+/* Tablet View (768px–1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Brand container - smaller logo layout */
+  .brand-container {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .brand-container img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  /* Offer/Discount container */
+  .discountcontainer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .discountcontainer > h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .discountcontainer > p {
+    margin: 10px auto;
+    max-width: 80%;
+  }
+
+  .inputbox {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .inputbox > input {
+    width: 60%;
+    height: 50px;
+    margin: 0;
+  }
+
+  .inputbox > button {
+    width: 25%;
+    height: 50px;
+  }
+}
+
+/* Mobile View (Below 768px) */
+@media (max-width: 768px) {
+  /* Brand container */
+  .brand-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .brand-container img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  /* Offer/Discount Section */
+  .discountcontainer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .discountcontainer > h2 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+  }
+
+  .discountcontainer > p {
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .inputbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .inputbox > input {
+    width: 90%;
+    height: 45px;
+    margin: 0;
+  }
+
+  .inputbox > button {
+    width: 90%;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+/* 🔹 Small Mobile View (Below 480px) */
+@media (max-width: 480px) {
+  .brand-container img {
+    max-width: 80px;
+  }
+
+  .discountcontainer > h2 {
+    font-size: 1.2rem;
+  }
+
+  .discountcontainer > p {
+    font-size: 0.85rem;
+  }
+
+  .inputbox > input,
+  .inputbox > button {
+    width: 95%;
+    height: 42px;
+  }
+}
+/* 🔹 Tablet View (768px–1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .offers {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .offers p {
+    font-size: 0.95rem;
+  }
+
+  .icon1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* 🔹 Mobile View (Below 768px) */
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .offers p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .icon1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+}
+
+/* 🔹 Small Mobile View (Below 480px) */
+@media (max-width: 480px) {
+  .offers {
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .offers p {
+    font-size: 0.85rem;
+  }
+
+  .icon1 {
+    font-size: 1.3rem;
+  }
+}
+
+
 
 
 
