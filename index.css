@@ -658,6 +658,16 @@ hr{
 }
 
 
+/* 
+   🔹 BASE RESET
+ */
+html, body {
+  overflow-x: hidden;
+}
+
+/*
+   🔹 NAVIGATION (Hamburger + Navbar)
+*/
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -672,7 +682,7 @@ hr{
     background: #fff;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 15px;
   }
 
@@ -680,11 +690,10 @@ hr{
   #menu-toggle:checked + .hamburger + .nav-menu {
     display: flex;
     color: white;
-  
   }
 
   .nav-menu li {
-    padding: 10px 0;  
+    padding: 10px 0;
   }
 
   .dropdown {
@@ -692,55 +701,13 @@ hr{
     background: none;
     box-shadow: none;
   }
-  
-}
-/* Strictly small phones only */
-@media (max-width: 480px) {
-  html, body { overflow-x: hidden; }
-}
 
-/* All mobile phones */
-@media (max-width: 576px) {
-  html, body { overflow-x: hidden; }
-}
-
-/* Mobiles + tablets (safe for most cases) */
-@media (max-width: 768px) {
-  html, body { overflow-x: hidden; }
-}
-
-
-/*  Tablets (768px to 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-  .nav1container {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .nav1container > p {
-    font-size: 1rem;
-    margin-left: 1%;
-  }
-
-  .group {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 160px;
-  }
-
-  .navicons {
-    gap: 10px;
-  }
-}
-
-/*  Phones (below 768px) */
-@media (max-width: 768px) {
+  /* Hide center text, keep search & icons */
   .nav1container > p,
   .nav1container > .center {
     display: none;
   }
 
-  /* Keep only search bar and icons visible */
   .nav1container {
     justify-content: space-between;
     align-items: center;
@@ -756,7 +723,6 @@ hr{
     gap: 8px;
   }
 
-  /* Adjust navbar spacing */
   .nav2container {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -766,47 +732,34 @@ hr{
     height: 45px;
   }
 
-  .nav-menu {
-    display: none;
-  }
-
-  /* Show hamburger */
-  .hamburger {
-    display: flex;
-  }
-    footer{
+  footer {
     text-align: center;
-   
   }
 }
 
-/* Small Phones (below 480px) */
-@media (max-width: 480px) {
+/* 
+    TABLETS (768px–1024px)
+ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nav1container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav1container > p {
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+
   .group {
-    max-width: 85%;
-  }
-
-  .input {
-    height: 35px;
-    font-size: 0.9rem;
-  }
-
-  .icon {
-    left: 0.8rem;
-    width: 0.9rem;
+    margin: 0 auto;
+    max-width: 160px;
   }
 
   .navicons {
-    font-size: 1.2rem;
+    gap: 10px;
   }
-  footer{
-    text-align: center;
-   
-  }
-  
-}
-/* Tablet View (768px–1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
+
   /* Carousel adjustments */
   .carousel-item {
     height: 400px;
@@ -829,11 +782,73 @@ hr{
     gap: 20px;
     padding: 0 10px;
   }
+
+  /* Brands and discount sections */
+  .brand-container {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .brand-container img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .discountcontainer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .discountcontainer > h2 {
+    font-size: 1.5rem;
+  }
+
+  .discountcontainer > p {
+    margin: 10px auto;
+    max-width: 80%;
+  }
+
+  .inputbox {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .inputbox > input {
+    width: 60%;
+    height: 50px;
+  }
+
+  .inputbox > button {
+    width: 25%;
+    height: 50px;
+  }
+
+  /* Offers section */
+  .offers {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .offers p {
+    font-size: 0.95rem;
+  }
+
+  .icon1 {
+    font-size: 1.2rem;
+  }
 }
 
-/* Mobile View (Below 768px) */
+/*
+   🔹 MOBILE (Below 768px)
+ */
 @media (max-width: 768px) {
-  /* Carousel images — make them shorter & fit screen width */
+  /* Carousel */
   .carousel-item {
     height: 250px;
     background-size: cover;
@@ -863,7 +878,7 @@ hr{
     font-size: 0.8rem;
   }
 
-  /* Best Selling Products */
+  /* Selling Products */
   .selling-products {
     flex-direction: column;
     align-items: center;
@@ -875,12 +890,11 @@ hr{
     font-size: 1rem;
   }
 
-  /* Product container */
+  /* Product Section */
   .productcontainer {
     padding: 20px;
   }
 
-  /* Product cards stacked 1 per row */
   .product-grid,
   .product-list {
     display: grid;
@@ -901,20 +915,125 @@ hr{
     height: auto;
     border-radius: 10px;
   }
-   
+
+  /* Brands */
+  .brand-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .brand-container img {
+    max-width: 100px;
+  }
+
+  /* Discount Section */
+  .discountcontainer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .discountcontainer > h2 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+  }
+
+  .discountcontainer > p {
+    font-size: 0.95rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .inputbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .inputbox > input,
+  .inputbox > button {
+    width: 90%;
+    height: 45px;
+  }
+
+  /* Offers */
+  .offers {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .offers p {
+    font-size: 0.9rem;
+  }
+
+  .icon1 {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  footer .col-md-3 {
+    text-align: center;
+  }
+
+  footer .digital-icons {
+    justify-content: center !important;
+    margin-top: 15px;
+  }
+
+  footer .digital-icons div {
+    margin: 0 10px;
+  }
+
+  footer .visa {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  footer .visa img {
+    margin: 5px;
+  }
+
+  footer .visa img:first-child {
+    margin-left: 0 !important;
+  }
+
+  footer .text-muted {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-
-/* Small Phones (Below 480px) */
-
+/* 
+   SMALL MOBILE (Below 480px)
+*/
 @media (max-width: 480px) {
+  .group {
+    max-width: 85%;
+  }
 
- 
+  .input {
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    left: 0.8rem;
+    width: 0.9rem;
+  }
+
+  .navicons {
+    font-size: 1.2rem;
+  }
+
+  /* Carousel smaller */
   .carousel-item {
-    height: auto;              
-    background-size: cover;    
-    background-position: center;
-    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+    background-position: start;
   }
 
   .carousel-caption {
@@ -926,7 +1045,6 @@ hr{
 
   .carousel-caption h1 {
     font-size: 1.2rem;
-    line-height: 1.3;
   }
 
   .carousel-caption p {
@@ -938,176 +1056,11 @@ hr{
     font-size: 0.8rem;
   }
 
-  /*Subscribe  */
-  .discountcontainer {
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  .discountcontainer > h2,
-  .discountcontainer > p {
-    margin-left: 0;
-    max-width: 100%;
-  }
-
-  .inputbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .inputbox > input {
-    width: 90%;
-    height: 45px;
-    margin: 0;
-  }
-
+  /* Subscribe box */
+  .inputbox > input,
   .inputbox > button {
-    width: 90%;
-    height: 45px;
-  }
-
-  /* Selling Products */
-  .selling-products {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .selling-products > li > a {
-    font-size: 0.95rem;
-  }
-
-  /*  Product Cards Responsive */
-  .productcontainer {
-    padding: 10px;
-  }
-
-  .product-card {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-}
-.col-12>img{
-  width: 100%;
-  
-}
-/* Tablet View (768px–1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-  /* Brand container - smaller logo layout */
-  .brand-container {
-    flex-wrap: wrap;
-    height: auto;
-    gap: 20px;
-    padding: 20px 0;
-  }
-
-  .brand-container img {
-    max-width: 120px;
-    height: auto;
-  }
-
-  /* Offer/Discount container */
-  .discountcontainer {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .discountcontainer > h2 {
-    font-size: 1.5rem;
-    margin-left: 0;
-  }
-
-  .discountcontainer > p {
-    margin: 10px auto;
-    max-width: 80%;
-  }
-
-  .inputbox {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .inputbox > input {
-    width: 60%;
-    height: 50px;
-    margin: 0;
-  }
-
-  .inputbox > button {
-    width: 25%;
-    height: 50px;
-  }
-}
-
-/* Mobile View (Below 768px) */
-@media (max-width: 768px) {
-  /* Brand container */
-  .brand-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    gap: 15px;
-    padding: 20px 0;
-  }
-
-  .brand-container img {
-    max-width: 100px;
-    height: auto;
-  }
-
-  /* Offer/Discount Section */
-  .discountcontainer {
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  .discountcontainer > h2 {
-    margin: 10px 0;
-    font-size: 1.4rem;
-  }
-
-  .discountcontainer > p {
-    margin: 0 auto;
-    max-width: 90%;
-    font-size: 0.95rem;
-  }
-
-  .inputbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .inputbox > input {
-    width: 90%;
-    height: 45px;
-    margin: 0;
-  }
-
-  .inputbox > button {
-    width: 90%;
-    height: 45px;
-    font-size: 1rem;
-  }
-}
-
-/* 🔹 Small Mobile View (Below 480px) */
-@media (max-width: 480px) {
-  .brand-container img {
-    max-width: 80px;
+    width: 95%;
+    height: 42px;
   }
 
   .discountcontainer > h2 {
@@ -1118,54 +1071,20 @@ hr{
     font-size: 0.85rem;
   }
 
-  .inputbox > input,
-  .inputbox > button {
-    width: 95%;
-    height: 42px;
-  }
-}
-/* 🔹 Tablet View (768px–1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-  .offers {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
+  /* Product Cards */
+  .product-card {
+    max-width: 320px;
   }
 
-  .offers p {
-    font-size: 0.95rem;
+  .product-card img {
+    border-radius: 8px;
   }
 
-  .icon1 {
-    font-size: 1.2rem;
-  }
-}
-
-/* 🔹 Mobile View (Below 768px) */
-@media (max-width: 768px) {
-  .offers {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-    padding: 15px 0;
+  .col-12 > img {
+    width: 100%;
   }
 
-  .offers p {
-    margin: 0;
-    font-size: 0.9rem;
-  }
-
-  .icon1 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-}
-
-/* 🔹 Small Mobile View (Below 480px) */
-@media (max-width: 480px) {
+  /* Offers */
   .offers {
     padding: 10px 0;
     gap: 10px;
@@ -1178,8 +1097,11 @@ hr{
   .icon1 {
     font-size: 1.3rem;
   }
-}
 
+  footer {
+    text-align: center;
+  }
+}
 
 
 
